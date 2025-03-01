@@ -1,3 +1,18 @@
+<#
+
+Microsoft Deployment Toolkit (MDT) script to import and configure a default start menu on a PC.
+
+1. On a PC, create a start menu that works best for your organization.
+2. Open PowerShell and run "Export-StartLayout -Path "C:\StartMenu.xml""
+3. Copy this script and the StartMenu.xml file into the %SCRIPTROOT% directory on MDT.
+4. Within your Task Sequence, add a "Run Command Line" step under Custom Tasks with the following settings:
+
+Powershell.exe -ExcutionPolicy Bypass -NoProfile -File "%SCRIPTROOT%\StartMenu.ps1"
+
+#>
+
+#-----------------------------------------------------------[Execution]------------------------------------------------------------
+
 # Load Microsoft.SMS.TSEnvironment COM object
 
 try {

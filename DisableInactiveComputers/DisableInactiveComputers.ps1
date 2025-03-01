@@ -12,7 +12,7 @@
     None
 .NOTES
   Version:        1.0
-  Author:         inundation.ca
+  Author:         twobyte.blog
   Creation Date:  September 01, 2023
   
 .EXAMPLE
@@ -36,7 +36,7 @@ $InactiveDate = (Get-Date).Adddays(-($DaysInactive))
 $SearchBase = "OU=Devices,OU=Corporate,DC=ad,DC=inundation,DC=ca"
 
 # OU which inactive computer objects will be moved into.
-$DisabledOU = "OU=Disabled,OU=Devices,OU=Corporate,DC=ad,DC=inundation,DC=ca"
+$DisabledOU = "OU=Disabled,OU=Devices,OU=Corporate,DC=ad,DC=twobyte,DC=blog"
 
 #-----------------------------------------------------------[Execution]------------------------------------------------------------
 

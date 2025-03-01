@@ -4,9 +4,9 @@ $Computer = $env:computerName
 # Variables
 $LaptopNameContains = "INU-S01-LP"
 $WorkstationNameContains = "INU-S01-WS"
-$DestinationLaptopOU = "OU=Laptops,OU=Devices,OU=Corporate,DC=ad,DC=inundation,DC=ca"
-$DetinationWorkstationOU = "OU=Workstations,OU=Devices,OU=Corporate,DC=ad,DC=inundation,DC=ca"
-$DomainController = "INU-S01-DC01.ad.inundation.ca"
+$DestinationLaptopOU = "OU=Laptops,OU=Devices,OU=Corporate,DC=ad,DC=twobyte,DC=blog"
+$DetinationWorkstationOU = "OU=Workstations,OU=Devices,OU=Corporate,DC=ad,DC=twobyte,DC=blog"
+$DomainController = "INU-S01-DC01.ad.twobyte.blog"
 
 if ($Computer.contains($LaptopNameContains)) {
     $path = $DestinationLaptopOU

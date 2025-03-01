@@ -1,9 +1,17 @@
-# Microsoft Deployment Toolkit (MDT) script to import and configure file associations on a PC.
+<#
 
-# Add a PowerShell step under the Custom Tasks section of your task sequence with the following command:
-# Powershell.exe -ExcutionPolicy Bypass -NoProfile -File "%SCRIPTROOT%\FileAssociations.ps1"
+Microsoft Deployment Toolkit (MDT) script to import and configure default file associations on a PC.
 
-# Ensure your DefaultFileAssociations.xml file is located within your %SCRIPTROOT% directory.
+1. On a PC, configure the default file associations that best for your organization.
+2. Open PowerShell and run "Dism /Online /Export-DefaultAppAssociations:"C:\FileAssociations.xml""
+3. Copy this script and the FileAssociations.xml file into the %SCRIPTROOT% directory on MDT.
+4. Within your Task Sequence, add a "Run Command Line" step under Custom Tasks with the following settings:
+
+Powershell.exe -ExcutionPolicy Bypass -NoProfile -File "%SCRIPTROOT%\FileAssociations.ps1"
+
+#>
+
+#-----------------------------------------------------------[Execution]------------------------------------------------------------
 
 # Load Microsoft.SMS.TSEnvironment COM object
 

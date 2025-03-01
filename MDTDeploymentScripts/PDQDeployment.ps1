@@ -1,3 +1,17 @@
+<# 
+
+Microsoft Deployment Toolkit (MDT) script to call and run a predefined PDQ Deploy task.
+
+1. Copy this script into %SCRIPTROOT% directory wtihin MDT.
+2. Add a "Run Command Line" step under the Custom Tasks section of your task sequence with the following command: 
+
+Powershell.exe -ExecutionPolicy Bypass -NoProfile -File "%SCRIPTROOT%\PDQDeployment.ps1"
+
+#>
+
+
+#-----------------------------------------------------------[Execution]------------------------------------------------------------
+
 netsh advfirewall set allprofiles state off
 ipconfig /registerdns
 

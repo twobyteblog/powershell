@@ -1,6 +1,6 @@
 
 # Location of Script to run.
-$ScriptPath = "\\ad.inundation.ca\scripts\myscript.ps1"
+$ScriptPath = "\\ad.twobyte.blog\scripts\myscript.ps1"
 
 # Account to run script under. In this case an MSA account.
 $LogonAccount = 'in\host01-msa$'
