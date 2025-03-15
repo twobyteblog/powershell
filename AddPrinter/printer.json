@@ -1,0 +1,12 @@
+{
+    "Version": "1.0",
+    "VersionSave": "HKLM:\\SOFTWARE\\Deployments\\PrinterName",
+
+    "Name":  "PrinterName",
+    "PortName":  "PrinterName",
+    "PortAddress":  "10.0.0.1",
+    "DriverName":  "Lexmark Global Print Driver",
+    "DriverFile":  "x4AKI4F.inf",
+    "DuplexMode": "TwoSidedLongEdge",
+    "Color": "$true"
+}
